@@ -4,12 +4,12 @@ export default {
   type: 'document',
   fields: [
     {
-      name: 'images',
+      name: 'image',
       title: 'Image',
       type: 'array',
       of: [{ type: 'image' }],
       options: {
-        hotspots: true,
+        hotspot: true,
       },
     },
     {
@@ -22,8 +22,8 @@ export default {
       title: 'Slug',
       type: 'slug',
       options: {
-        sounce: 'name',
-        maxLenght: 90,
+        source: 'name',
+        maxLength: 90,
       },
     },
     {
